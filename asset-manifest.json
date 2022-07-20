@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/maindo/static/css/main.3c77c335.css",
+    "main.css": "/maindo/static/css/main.2a613af7.css",
     "main.js": "/maindo/static/js/main.89c8f64d.js",
     "static/media/Gilroy-ExtraBold.otf": "/maindo/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/maindo/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "index.html": "/maindo/index.html",
-    "main.3c77c335.css.map": "/maindo/static/css/main.3c77c335.css.map",
+    "main.2a613af7.css.map": "/maindo/static/css/main.2a613af7.css.map",
     "main.89c8f64d.js.map": "/maindo/static/js/main.89c8f64d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c77c335.css",
+    "static/css/main.2a613af7.css",
     "static/js/main.89c8f64d.js"
   ]
 }
