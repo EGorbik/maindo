@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/maindo/static/css/main.fff28c2c.css",
-    "main.js": "/maindo/static/js/main.ba781fd3.js",
+    "main.css": "/maindo/static/css/main.e95fe15e.css",
+    "main.js": "/maindo/static/js/main.14479290.js",
     "static/media/bg.png": "/maindo/static/media/bg.7bc46f8b52f6e7113d7d.png",
     "static/media/Gilroy-ExtraBold.otf": "/maindo/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/maindo/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "index.html": "/maindo/index.html",
-    "main.fff28c2c.css.map": "/maindo/static/css/main.fff28c2c.css.map",
-    "main.ba781fd3.js.map": "/maindo/static/js/main.ba781fd3.js.map"
+    "main.e95fe15e.css.map": "/maindo/static/css/main.e95fe15e.css.map",
+    "main.14479290.js.map": "/maindo/static/js/main.14479290.js.map"
   },
   "entrypoints": [
-    "static/css/main.fff28c2c.css",
-    "static/js/main.ba781fd3.js"
+    "static/css/main.e95fe15e.css",
+    "static/js/main.14479290.js"
   ]
 }
