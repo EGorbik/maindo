@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useEffect, useReducer } from "react";
 import { Routes, Route } from "react-router-dom";
-//import ReactGa from "react-ga";
 import Main from "./pages/Main";
 import Questionnaire from "./pages/Questionnaire";
 import { ContextApp, initialState, testReducer } from "./store/answers.reducer";

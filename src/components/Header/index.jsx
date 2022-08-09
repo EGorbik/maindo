@@ -96,7 +96,7 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
                             </Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="https://web.telegram.org/k/#@durov">
+                            <Nav.Link href="https://web.telegram.org/?legacy=1#/im?p=@founderdad">
                                 <HeaderButton
                                     dark={dark}
                                     img={

@@ -220,7 +220,6 @@ const MainContent = ({ handleSendResult, isOpenMobileHeader }) => {
                 sendMetrik("leftEmail", email);
                 dispatch({ type: "SET_USER", data: { name, email } });
             }
-            //alert(name)
         } else {
             if (!currentAnswer?.answer && currentAnswer?.answer !== 0) return;
         }

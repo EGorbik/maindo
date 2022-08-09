@@ -32,10 +32,10 @@ const Congratulation = () => {
         }
         emailjs
             .send(
-                "service_htmjajn",
-                "template_8hti78o",
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
                 emailTemplate,
-                "z6zuyF3ikqdQxg2GK"
+                process.env.REACT_APP_PUBLIC_KEY
             )
             .then(
                 (result) => {

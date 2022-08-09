@@ -72,39 +72,27 @@ function Footer() {
                             margin: "24px auto 0 auto",
                         }}
                     >
-                        <button
-                            className={styles.snBtn}
-                            type="button"
-                            onClick={() => alert("telegram")}
-                        >
+                        <div className={styles.snBtn}>
                             <img
                                 alt="sdf"
                                 className={styles.socialNetwork}
                                 src={telegramIcon}
                             />
-                        </button>
-                        <button
-                            className={styles.snBtn}
-                            type="button"
-                            onClick={() => alert("telegram")}
-                        >
+                        </div>
+                        <div className={styles.snBtn}>
                             <img
                                 alt="sdf"
                                 className={styles.socialNetwork}
                                 src={facebookIcon}
                             />
-                        </button>
-                        <button
-                            className={styles.snBtn}
-                            type="button"
-                            onClick={() => alert("telegram")}
-                        >
+                        </div>
+                        <div className={styles.snBtn}>
                             <img
                                 alt="sdf"
                                 className={styles.socialNetwork}
                                 src={instagramIcon}
                             />
-                        </button>
+                        </div>
                     </div>
                 </Col>
             </Row>
@@ -117,41 +105,29 @@ function Footer() {
                 Получи консультацию прямо сейчас!
             </div>
             <div className={styles.socialNetworksContainer}>
-                <button
-                    className={styles.snBtn}
-                    type="button"
-                    onClick={() => alert("telegram")}
-                >
+                <div className={styles.snBtn}>
                     <img
                         className={styles.snLogo}
                         alt="telegram"
                         src={telegramIcon}
                     />
-                </button>
+                </div>
 
-                <button
-                    className={styles.snBtn}
-                    type="button"
-                    onClick={() => alert("telegram")}
-                >
+                <div className={styles.snBtn}>
                     <img
                         className={styles.snLogo}
                         alt="facebook"
                         src={facebookIcon}
                     />
-                </button>
+                </div>
 
-                <button
-                    className={styles.snBtn}
-                    type="button"
-                    onClick={() => alert("telegram")}
-                >
+                <div className={styles.snBtn}>
                     <img
                         className={styles.snLogo}
                         alt="instagram"
                         src={instagramIcon}
                     />
-                </button>
+                </div>
             </div>
             <div className={styles.line} />
             <div className={styles.bottom}>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import CustomInput from "../../CustomInput";
+import CustomInput from "../CustomInput/CustomInput";
 import profile from "../../../../images/profile.png";
 import emailImg from "../../../../images/email.png";
 

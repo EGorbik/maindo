@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import CustomInput from "../../CustomInput";
+import CustomInput from "../CustomInput/CustomInput";
 import answer from "../../../../images/answer.png";
 
 const Answer = ({ text, data, setAnswer }) => {

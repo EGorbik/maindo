@@ -72,19 +72,16 @@ function MobileHeader({ setIsOpenMobileHeader }) {
                 </div>
                 <div className={styles.socialNetworksContainer}>
                     <img
-                        onClick={() => alert("telegram")}
                         className={styles.snLogo}
                         alt="telegram"
                         src={telegramIcon}
                     />
                     <img
-                        onClick={() => alert("facebook")}
                         className={styles.snLogo}
                         alt="facebook"
                         src={facebookIcon}
                     />
                     <img
-                        onClick={() => alert("instagram")}
                         className={styles.snLogo}
                         alt="instagram"
                         src={instagramIcon}
