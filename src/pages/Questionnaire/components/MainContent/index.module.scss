@@ -1,0 +1,96 @@
+@import "src/constants/_variables.scss";
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.backBtnTop {
+    display: none;
+    width: 100px;
+}
+
+.infoContainer {
+    width: 70%;
+    min-height: 590px;
+    background-color: $white;
+    padding: 50px 40px 100px 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.backBtn {
+    width: 30px;
+    left: 6%;
+    position: absolute;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.mainImg {
+    width: 80%;
+}
+
+.btnWrapper {
+    bottom: 10px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.btnContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .mainContainer {
+        display: flex !important;
+        padding: 10px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 89vh;
+        margin-top: 1vh !important;
+    }
+
+    .mainImg {
+        margin: 0 auto;
+        display: block;
+        height: 80%;
+        width: auto;
+    }
+
+    .infoContainer {
+        width: 90%;
+        min-height: auto;
+        padding: 0px;
+        height: 60vh;
+    }
+
+    .rightCustomCol {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .backBtnTop {
+        display: block;
+    }
+
+    .leftCustomCol {
+        width: 100%;
+        height: 30% !important;
+        top: 0;
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainImg {
+        display: none;
+    }
+}

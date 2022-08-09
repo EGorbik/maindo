@@ -1,0 +1,37 @@
+.wrapper {
+    padding-top: 10px;
+    align-items: "center";
+}
+
+.logo {
+    width: 100px;
+    height: "auto";
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    width: 40px;
+}
+
+.navContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.navItem {
+    font-size: 15px;
+    font-family: "Gilroy";
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .burger {
+        display: block;
+    }
+}

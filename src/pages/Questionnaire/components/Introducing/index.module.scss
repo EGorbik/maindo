@@ -1,0 +1,21 @@
+@import "src/constants/_variables.scss";
+
+.title {
+    font-family: "GilroyBold";
+    font-size: 22px;
+    color: $darkBlue;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Gilroy";
+    font-size: 16px;
+    color: $darkBlue;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.inputContainer {
+    margin-top: 30px;
+}

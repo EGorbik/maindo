@@ -1,0 +1,127 @@
+@import "src/constants/_variables.scss";
+
+.wrapper {
+    margin-top: 140px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.footerNav {
+    margin-top: 10;
+}
+
+.link {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footerText {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: "Gilroy";
+    color: $darkBlue;
+}
+
+.footerBoldText {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 20px;
+    font-family: "GilroyBold";
+    color: $darkBlue;
+}
+
+.snBtn {
+    border: none;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.snLogo {
+    width: 40px;
+    cursor: pointer !important;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: $darkBlue;
+    margin-top: 30px;
+}
+
+.footerBoldTextMobile {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    display: none;
+}
+
+.socialNetworksContainer {
+    display: none;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.socialNetwork {
+    width: 26px;
+}
+
+.footerTextHidden {
+    display: none;
+    padding: 40px 0;
+    font-size: 16px;
+    font-family: "Gilroy";
+    color: $darkBlue;
+}
+
+.copyright {
+    width: 15px;
+    height: 15px;
+}
+
+.copyrightText {
+    font-size: 16px;
+    font-family: "Gilroy";
+    color: $darkBlue;
+    margin-left: 15px;
+}
+
+@media (max-width: 990px) {
+    .footerBlock {
+        width: 100%;
+    }
+
+    .footerText {
+        display: none;
+    }
+
+    .footerNav {
+        display: none;
+    }
+
+    .footerBoldTextMobile {
+        display: block;
+    }
+
+    .socialNetworksContainer {
+        display: flex;
+    }
+
+    .footerTextHidden {
+        display: block;
+    }
+}

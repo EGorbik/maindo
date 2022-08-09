@@ -1,0 +1,17 @@
+@import "src/constants/_variables.scss";
+
+.answerText {
+    font-family: "Gilroy";
+    font-size: 22px;
+    color: $darkBlue;
+    text-align: center;
+    margin: 20px auto 30px auto;
+    width: 70%;
+}
+
+@media (max-width: 991px) {
+    .answerText {
+        font-size: 14px;
+        width: 100%;
+    }
+}

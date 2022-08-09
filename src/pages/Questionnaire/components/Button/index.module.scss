@@ -1,0 +1,18 @@
+@import "src/constants/_variables.scss";
+
+.btn {
+    width: 100% !important;
+    background-color: $darkBlue;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+    .btn {
+        width: 100% !important;
+    }
+}

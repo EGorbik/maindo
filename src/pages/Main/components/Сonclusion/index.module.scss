@@ -1,0 +1,105 @@
+@import "src/constants/_variables.scss";
+
+.wrapper {
+    background-color: $cream;
+    background-size: cover;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.title {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    width: 80%;
+}
+
+.subtitle {
+    font-family: "Gilroy";
+    color: $darkBlue;
+    font-size: 20px;
+    width: 80%;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.text {
+    font-family: "Gilroy";
+    color: $darkBlue;
+    font-size: 16px;
+}
+
+.contentInfo {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.socialNetwork {
+    width: 26px;
+}
+
+.mobiledText {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 20px;
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    display: none;
+}
+
+.img {
+    width: 100%;
+}
+
+.number {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    font-size: 18px;
+    display: inline;
+}
+
+.postTitle {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    display: inline;
+    font-size: 24px;
+    padding-left: 70px;
+}
+
+.mobileImg {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .mainImg {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .btnContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .mobileImg {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .mobiledText {
+        display: block;
+    }
+}

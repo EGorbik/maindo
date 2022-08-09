@@ -1,0 +1,32 @@
+@import "src/constants/_variables.scss";
+
+.questionTitle {
+    font-family: "Gilroy";
+    font-size: 22px;
+    color: $darkBlue;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.fourBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+@media (max-width: 991px) {
+    .questionTitle {
+        font-size: 16px;
+        margin-top: 1px;
+    }
+
+    .fourBtnContainer {
+        margin: 0px auto 0 auto;
+    }
+
+    .msqBtnContainer {
+        width: 100% !important;
+    }
+}

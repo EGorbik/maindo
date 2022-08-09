@@ -1,0 +1,50 @@
+@import "src/constants/_variables.scss";
+
+.backBtn {
+    width: 30px;
+    cursor: pointer;
+}
+
+.scaleContaiener {
+    width: 70%;
+    margin: 18px auto 40px auto;
+}
+
+.scale {
+    height: 10px;
+    border-radius: 5px;
+    background-color: $cream;
+    position: relative;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: $darkBlue;
+    position: absolute;
+}
+
+.scaleText {
+    font-family: "GilroyBold";
+    font-size: 16px;
+    color: $gray;
+}
+
+@media (max-width: 991px) {
+    .backBtn {
+        display: none;
+    }
+
+    .scaleContaiener {
+        margin: 18px auto 20px auto;
+    }
+
+    .scale,
+    .progress {
+        height: 5px;
+    }
+
+    .scaleText {
+        font-size: 14px;
+    }
+}

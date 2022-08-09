@@ -1,0 +1,38 @@
+@import "src/constants/_variables.scss";
+
+.wrapper {
+    padding-top: 22px;
+}
+
+.number {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    font-size: 18px;
+    display: inline;
+}
+
+.postTitle {
+    font-family: "GilroyBold";
+    color: $darkBlue;
+    display: inline;
+    font-size: 24px;
+    padding-left: 70px;
+}
+
+.text {
+    font-family: "Gilroy";
+    color: $darkBlue;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.titleText {
+    width: 100% !important;
+}
+
+@media (max-width: 901px) {
+    .postTitle {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}

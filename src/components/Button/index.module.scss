@@ -1,0 +1,61 @@
+@import "src/constants/_variables.scss";
+
+.connectBtn {
+    background-color: $white;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 20px;
+    width: 300px;
+    cursor: pointer;
+    color: $darkBlue;
+    border: none;
+    transition: 0.8s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.connectText {
+    text-align: center;
+    width: 220px;
+    display: inline;
+    font-family: "Gilroy";
+    font-size: 22px;
+}
+
+.connectImg {
+    width: 55px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+.connectBtn:hover {
+    color: $white;
+}
+
+.connectBtn::after {
+    content: "";
+    background: $darkBlue;
+    color: $white;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+    transition: all 0.8s ease;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -350%;
+    bottom: -350%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+}
+
+.connectBtn:hover::after {
+    transition: all 0.8s ease-out;
+    transform: scale(1, 1);
+}

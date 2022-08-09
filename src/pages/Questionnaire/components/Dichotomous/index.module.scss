@@ -1,0 +1,36 @@
+@import "src/constants/_variables.scss";
+
+.questionTitle {
+    font-family: "Gilroy";
+    font-size: 22px;
+    color: $darkBlue;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.dichotomousBtnContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 20px auto 80px auto;
+}
+
+.dichotomousBtn {
+    width: 48%;
+}
+
+@media (max-width: 991px) {
+    .questionTitle {
+        font-size: 16px;
+        margin-top: 1px;
+    }
+
+    .dichotomousBtnContainer {
+        width: 90%;
+    }
+
+    .dichotomousBtn {
+        width: 100%;
+    }
+}

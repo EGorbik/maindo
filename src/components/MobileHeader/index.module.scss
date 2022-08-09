@@ -1,0 +1,71 @@
+@import "src/constants/_variables.scss";
+
+.wrapper {
+    background-color: $cream;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+.container {
+    max-width: 93vw;
+    display: block;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: "auto";
+}
+
+.burger {
+    width: 23px;
+    height: "auto";
+}
+
+.title {
+    color: $darkBlue;
+    font-family: "Gilroy";
+    font-size: 25px;
+    margin: 34px auto;
+}
+
+.line {
+    height: 0.1px;
+    background-color: $darkBlue;
+}
+
+.navbar {
+    width: 87vw;
+    margin: 60px auto 0px auto;
+}
+
+.footerTitle {
+    font-family: "GilroyBold";
+    font-size: 20px;
+    color: $darkBlue;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.socialNetworksContainer {
+    display: flex;
+    margin: 10px auto 0px auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.snLogo {
+    width: 50px;
+    cursor: pointer !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    margin: 0 auto !important;
+}

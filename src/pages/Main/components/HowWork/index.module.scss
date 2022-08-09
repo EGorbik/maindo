@@ -1,0 +1,231 @@
+.wrapper {
+    background-image: url("../../../../../public/assets/img/bg.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.container {
+    max-width: 92vw;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 128px;
+    height: 32px;
+}
+
+.navBlock {
+    width: 72%;
+    margin-left: 6%;
+    padding-top: 2px;
+}
+
+.navItem {
+    margin-left: 5%;
+    font-size: 18px;
+    font-family: "Gilroy";
+    color: #ffffff;
+}
+
+.title {
+    font-family: "GilroyBold";
+    color: #ffffff;
+}
+
+.steptitle {
+    font-family: "GilroyBold";
+    color: #ffffff;
+    font-size: 26px;
+    margin-left: 50px;
+}
+
+.mobileSwiper {
+    display: none;
+}
+
+.subtitle {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.stepsubtitle {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-size: 17px;
+    text-align: left;
+}
+
+.stepsubtitleMobile {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.sliderTitle {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+}
+
+.triangle {
+    width: 2%;
+    position: absolute;
+    bottom: 0%;
+    left: 49%;
+}
+
+.bold {
+    font-family: "GilroyBold";
+    color: #ffffff;
+    font-size: 24px;
+    display: inline;
+}
+
+.mainImg {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+.iconBlock {
+    width: 1px;
+}
+
+.companies {
+    width: 50%;
+}
+
+.titleContainer {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.achievementsBlock {
+    background-color: #fef2ef;
+    width: 100%;
+    height: 220px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.digit {
+    font-family: "GilroyBold";
+    font-size: 38px;
+    color: "#1B2B68";
+    z-index: 40;
+    position: relative;
+    display: inline-block;
+}
+
+.achievementsSubtitle {
+    font-family: "Gilroy";
+    font-size: 16px;
+    color: #1b2b68;
+    margin-top: 6px;
+    width: 56%;
+}
+
+.ellipse {
+    width: 56px;
+    right: 0%;
+    position: absolute;
+    z-index: 1;
+}
+
+.slideTitleContainer {
+    display: flex;
+    position: relative;
+}
+
+.slideWrapper {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.verticalSlide {
+    padding-top: 100px;
+    background-color: transparent !important;
+    height: 500px;
+}
+
+.mobileSlide {
+    background-color: transparent !important;
+    display: block !important;
+    padding-bottom: 60px;
+    height: 420px !important;
+}
+
+@media (max-width: 1270px) {
+    .navBlock {
+        width: 72%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .navBlock {
+        width: 62%;
+        margin-left: 0%;
+    }
+
+    .navItem {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        border-radius: 30px;
+    }
+
+    .container {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .swiperContainers {
+        display: none;
+    }
+
+    .mobileSwiper {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .titleContainer {
+        display: block !important;
+        position: relative;
+    }
+
+    .title {
+        width: 90vw !important;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+}
