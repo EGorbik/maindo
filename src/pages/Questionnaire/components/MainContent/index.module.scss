@@ -58,7 +58,7 @@
     .mainImg {
         margin: 0 auto;
         display: block;
-        height: 80%;
+        height: 100%;
         width: auto;
     }
 
@@ -83,14 +83,8 @@
 
     .leftCustomCol {
         width: 100%;
-        height: 30% !important;
+        height: 20% !important;
         top: 0;
         position: relative;
-    }
-}
-
-@media (max-width: 500px) {
-    .mainImg {
-        display: none;
     }
 }

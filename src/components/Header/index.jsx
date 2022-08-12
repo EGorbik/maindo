@@ -42,7 +42,7 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
                                 spy={true}
                                 smooth={true}
                                 offset={-300}
-                                delay={1000}
+                                delay={0}
                                 duration={100}
                             >
                                 <div

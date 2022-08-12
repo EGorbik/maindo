@@ -13,7 +13,7 @@ import observer from "../../../../images/observer.png";
 import bushBear from "../../../../images/bushBear.png";
 import PSY from "../../../../images/PSY.png";
 import magicСarpet from "../../../../images/magicСarpet.png";
-import q4 from "../../../../images/q4.png";
+import q4 from "../../../../gif/q4.gif";
 import catInBox from "../../../../images/catInBox.png";
 import library from "../../../../images/library.png";
 import q7 from "../../../../images/q7.png";

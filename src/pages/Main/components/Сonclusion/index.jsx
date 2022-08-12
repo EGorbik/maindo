@@ -25,7 +25,9 @@ function Conclusion() {
                         </div>
                         <div className={styles.btnContainer}>
                             <DarkButton
-                                handleClick={() => navigate("/questionnaire")}
+                                handleClick={() => {
+                                    navigate("/questionnaire");
+                                }}
                                 title="Пройти тест"
                                 img="arrowRight.png"
                             />

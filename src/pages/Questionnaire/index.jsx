@@ -13,8 +13,9 @@ const Questionnaire = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 200);
+            //window.scrollTo(0, 0);
+        }, 0);
+
         if (isOpenMobileHeader) {
             document.body.style.overflowY = "hidden";
         } else {
