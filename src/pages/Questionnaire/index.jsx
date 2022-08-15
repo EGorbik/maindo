@@ -12,10 +12,11 @@ const Questionnaire = () => {
     const [showResult, setShowResult] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
-            //window.scrollTo(0, 0);
-        }, 0);
-
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        });
         if (isOpenMobileHeader) {
             document.body.style.overflowY = "hidden";
         } else {

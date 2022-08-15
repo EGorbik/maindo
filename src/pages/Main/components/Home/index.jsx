@@ -40,9 +40,9 @@ const Home = () => {
                             Мы открываем рынок США для каждого!
                         </h1>
                         <h1 className={styles.subtitle}>
-                            Расскажи нам о своем продукте и мы
+                            Расскажи нам о своем продукте и мы&nbsp;
                             <div className={styles.bold}>
-                                поможем твоему бизнессу !
+                                поможем твоему бизнесу !
                             </div>
                         </h1>
                         <div className={styles.btnMain}>

@@ -8,7 +8,7 @@ import Answer from "../Answer";
 import MCQ from "../MCQ/index";
 import QuestionHeader from "../QuestionHeader";
 import { ContextApp } from "../../../../store/answers.reducer";
-import { sendMetrik } from "../../../../utils/metriks";
+//import { sendMetrik } from "../../../../utils/metriks";
 import observer from "../../../../images/observer.png";
 import bushBear from "../../../../images/bushBear.png";
 import PSY from "../../../../images/PSY.png";
@@ -29,12 +29,23 @@ import what from "../../../../images/what.png";
 
 const questions = [
     {
-        element: (name, email, setName, setEmail) => (
+        element: (
+            name,
+            email,
+            setName,
+            setEmail,
+            handleNext,
+            nameError,
+            emailError
+        ) => (
             <Introducing
                 name={name}
                 email={email}
                 setName={setName}
                 setEmail={setEmail}
+                handleNext={handleNext}
+                nameError={nameError}
+                emailError={emailError}
             />
         ),
         image: observer,
@@ -209,15 +220,21 @@ const MainContent = ({ handleSendResult, isOpenMobileHeader }) => {
     const { state, dispatch } = useContext(ContextApp);
     const [currentAnswer, setCurrentAnswer] = useState();
     const [email, setEmail] = useState("");
+    const [nameError, setNameError] = useState(false);
+    const [emailError, setEmailError] = useState("");
     const [name, setName] = useState("");
 
     const handleNext = () => {
+        setNameError(false);
+        setEmail(false);
         console.log(state);
         if (pageNumber === 0) {
             if (!name || !email) {
+                if (!name) setNameError(true);
+                if (!email) setEmailError(true);
                 return;
             } else {
-                sendMetrik("leftEmail", email);
+                //sendMetrik("leftEmail", email);
                 dispatch({ type: "SET_USER", data: { name, email } });
             }
         } else {
@@ -294,7 +311,10 @@ const MainContent = ({ handleSendResult, isOpenMobileHeader }) => {
                             name,
                             email,
                             setName,
-                            setEmail
+                            setEmail,
+                            handleNext,
+                            nameError,
+                            emailError
                         )}
                     <div className={styles.btnWrapper}>
                         <div className={styles.btnContainer}>

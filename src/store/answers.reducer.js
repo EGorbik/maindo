@@ -1,5 +1,5 @@
 import React from "react";
-import { sendMetrik } from "../utils/metriks";
+//import { sendMetrik } from "../utils/metriks";
 export const ContextApp = React.createContext();
 
 const initialValues = {
@@ -44,10 +44,10 @@ export const testReducer = (state, action) => {
             return initialState;
         case "LEAVE_QUESTIONNAIRE":
             if (state.number !== 14) {
-                sendMetrik(
-                    "numberOfQuestions",
-                    state.user.email + " - " + state.number
-                );
+                // sendMetrik(
+                //     "numberOfQuestions",
+                //     state.user.email + " - " + state.number
+                // );
                 return initialState;
             }
             return state;
