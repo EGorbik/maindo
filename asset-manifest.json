@@ -1,16 +1,38 @@
 {
   "files": {
-    "main.css": "/maindo/static/css/main.c4450b80.css",
-    "main.js": "/maindo/static/js/main.958b1014.js",
+    "main.css": "/maindo/static/css/main.ec661329.css",
+    "main.js": "/maindo/static/js/main.bee266a7.js",
+    "static/media/q4.gif": "/maindo/static/media/q4.15947d186b44138caf00.gif",
     "static/media/bg.png": "/maindo/static/media/bg.7bc46f8b52f6e7113d7d.png",
+    "static/media/conclusion.gif": "/maindo/static/media/conclusion.65b6c032673d8ba21c73.gif",
+    "static/media/q10.gif": "/maindo/static/media/q10.552c24becc3a69c74d3b.gif",
+    "static/media/homeImg.gif": "/maindo/static/media/homeImg.89c8e7180b2ec60f6731.gif",
+    "static/media/bulb.gif": "/maindo/static/media/bulb.54aee0d2661b070ea98a.gif",
+    "static/media/PSY.png": "/maindo/static/media/PSY.704c80ac6dc592a55dab.png",
+    "static/media/what.png": "/maindo/static/media/what.d7785cf4840ceeff1274.png",
+    "static/media/q13.png": "/maindo/static/media/q13.31f34e83318fcdbeb13a.png",
+    "static/media/bushBear.png": "/maindo/static/media/bushBear.e80e632ac27c395a25a1.png",
+    "static/media/q12.png": "/maindo/static/media/q12.7124bef02bf6f15965d6.png",
+    "static/media/aboutImg.png": "/maindo/static/media/aboutImg.777f82a04b7ee0f785f2.png",
+    "static/media/q14.png": "/maindo/static/media/q14.49cb9021f5c99c33e2b8.png",
+    "static/media/observer.png": "/maindo/static/media/observer.e480b186c31d76363fbb.png",
+    "static/media/q9.png": "/maindo/static/media/q9.f23be1b1fe79d05753e5.png",
+    "static/media/q7.png": "/maindo/static/media/q7.e050d7b409b12343d02c.png",
+    "static/media/magicСarpet.png": "/maindo/static/media/magicСarpet.ec460cf47c104048f167.png",
+    "static/media/library.png": "/maindo/static/media/library.2dfdbff2bff576ccaff1.png",
+    "static/media/catInBox.png": "/maindo/static/media/catInBox.82366b1fac4406dd5d80.png",
+    "static/media/q8.png": "/maindo/static/media/q8.4d047d43be3f35467693.png",
+    "static/media/q11.png": "/maindo/static/media/q11.edcd13680f69758febd1.png",
     "static/media/Gilroy-ExtraBold.otf": "/maindo/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/maindo/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "static/media/walmart.png": "/maindo/static/media/walmart.830ecaeaa96c8148faf9.png",
+    "static/media/shopify.png": "/maindo/static/media/shopify.12bf395752ff1e830617.png",
     "index.html": "/maindo/index.html",
-    "main.c4450b80.css.map": "/maindo/static/css/main.c4450b80.css.map",
-    "main.958b1014.js.map": "/maindo/static/js/main.958b1014.js.map"
+    "main.ec661329.css.map": "/maindo/static/css/main.ec661329.css.map",
+    "main.bee266a7.js.map": "/maindo/static/js/main.bee266a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4450b80.css",
-    "static/js/main.958b1014.js"
+    "static/css/main.ec661329.css",
+    "static/js/main.bee266a7.js"
   ]
 }
