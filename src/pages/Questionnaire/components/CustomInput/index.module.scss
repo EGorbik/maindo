@@ -27,8 +27,21 @@
     margin-left: 12px;
 }
 
+.errorMessage {
+    color: red;
+    font-size: 14px;
+}
+
 @media (max-width: 991px) {
     .inputTitle {
         font-size: 16px;
+    }
+
+    .customInput {
+        height: 36px;
+    }
+
+    .errorMessage {
+        font-size: 12px;
     }
 }

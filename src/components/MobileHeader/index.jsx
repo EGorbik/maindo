@@ -6,8 +6,8 @@ import styles from "./index.module.scss";
 import darkLogo from "../../images/darkLogo.png";
 import crossDark from "../../images/crossDark.png";
 import telegramIcon from "../../images/telegramIcon.png";
-import facebookIcon from "../../images/facebookIcon.png";
-import instagramIcon from "../../images/instagramIcon.png";
+import facebookIconGray from "../../images/grayFacebook.png";
+import instagramIconGray from "../../images/grayInstagram.png";
 
 function MobileHeader({ setIsOpenMobileHeader }) {
     return (
@@ -72,6 +72,9 @@ function MobileHeader({ setIsOpenMobileHeader }) {
                 </div>
                 <div className={styles.socialNetworksContainer}>
                     <img
+                        onClick={() =>
+                            (window.location.href = "https://t.me/founderdad")
+                        }
                         className={styles.snLogo}
                         alt="telegram"
                         src={telegramIcon}
@@ -79,12 +82,12 @@ function MobileHeader({ setIsOpenMobileHeader }) {
                     <img
                         className={styles.snLogo}
                         alt="facebook"
-                        src={facebookIcon}
+                        src={facebookIconGray}
                     />
                     <img
                         className={styles.snLogo}
                         alt="instagram"
-                        src={instagramIcon}
+                        src={instagramIconGray}
                     />
                 </div>
             </div>

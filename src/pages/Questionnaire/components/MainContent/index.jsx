@@ -62,8 +62,9 @@ const questions = [
         image: bushBear,
     },
     {
-        element: (data, setAnswer) => (
+        element: (data, setAnswer, handleNext) => (
             <Answer
+                handleNext={handleNext}
                 data={data}
                 setAnswer={setAnswer}
                 text="Какой у вас продукт? опишите в нескольких словах его уникальность для рынка?"
@@ -87,8 +88,9 @@ const questions = [
         image: magicСarpet,
     },
     {
-        element: (data, setAnswer) => (
+        element: (data, setAnswer, handleNext) => (
             <Answer
+                handleNext={handleNext}
                 data={data}
                 setAnswer={setAnswer}
                 text="Где производится ваш продукт?"
@@ -97,8 +99,9 @@ const questions = [
         image: q4,
     },
     {
-        element: (data, setAnswer) => (
+        element: (data, setAnswer, handleNext) => (
             <Answer
+                handleNext={handleNext}
                 data={data}
                 setAnswer={setAnswer}
                 text="Размеры и вес 1 продукта? габариты и вес ящика, количество товара в ящике?"
@@ -224,12 +227,25 @@ const MainContent = ({ handleSendResult, isOpenMobileHeader }) => {
     const [emailError, setEmailError] = useState("");
     const [name, setName] = useState("");
 
+    function isEmail(val) {
+        let regEmail =
+            // eslint-disable-next-line no-useless-escape
+            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!regEmail.test(val)) {
+            setEmailError(true);
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     const handleNext = () => {
         setNameError(false);
-        setEmail(false);
+        setEmailError(false);
         console.log(state);
         if (pageNumber === 0) {
-            if (!name || !email) {
+            let validEmail = isEmail(email) && email;
+            if (!name || !validEmail) {
                 if (!name) setNameError(true);
                 if (!email) setEmailError(true);
                 return;
@@ -305,7 +321,11 @@ const MainContent = ({ handleSendResult, isOpenMobileHeader }) => {
                         />
                     )}
                     {currentAnswer?.id === pageNumber &&
-                        questions[pageNumber].element(currentAnswer, setAnswer)}
+                        questions[pageNumber].element(
+                            currentAnswer,
+                            setAnswer,
+                            handleNext
+                        )}
                     {pageNumber === 0 &&
                         questions[pageNumber].element(
                             name,

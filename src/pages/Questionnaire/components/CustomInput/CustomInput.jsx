@@ -25,10 +25,12 @@ const CustomInput = ({
                 className={styles.customInput}
             />
             {nameError && (
-                <div style={{ color: "red" }}>Имя не должно быть пустым</div>
+                <div className={styles.errorMessage}>
+                    Имя не должно быть пустым
+                </div>
             )}
             {emailError && (
-                <div style={{ color: "red" }}>Введите вальдную почту</div>
+                <div className={styles.errorMessage}>Неверный адрес почты</div>
             )}
         </div>
     );

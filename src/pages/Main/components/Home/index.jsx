@@ -90,7 +90,7 @@ const Home = () => {
                                     width: "10px",
                                 }}
                             >
-                                <div className={styles.digit}>+12 000 000</div>
+                                <div className={styles.digit}>+12 000 000$</div>
                                 <img className={styles.ellipse} src={ellipse} />
                             </div>
                             <div className={styles.achievementsSubtitle}>
@@ -104,7 +104,7 @@ const Home = () => {
                                     position: "relative",
                                 }}
                             >
-                                <div className={styles.digit}>+20 000</div>
+                                <div className={styles.digit}>+20 000$</div>
                                 <img className={styles.ellipse} src={ellipse} />
                             </div>
                             <div className={styles.achievementsSubtitle}>
@@ -118,7 +118,7 @@ const Home = () => {
                                     position: "relative",
                                 }}
                             >
-                                <div className={styles.digit}>+250</div>
+                                <div className={styles.digit}>+250$</div>
                                 <img className={styles.ellipse} src={ellipse} />
                             </div>
                             <div className={styles.achievementsSubtitle}>

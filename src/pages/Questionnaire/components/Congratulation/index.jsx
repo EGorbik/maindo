@@ -1,50 +1,51 @@
 import React, { useContext, useEffect } from "react";
 import { ContextApp } from "../../../../store/answers.reducer";
 import bulb from "../../../../gif/bulb.gif";
-import { sendMetrik } from "../../../../utils/metriks";
-import { setDoc, doc } from "firebase/firestore";
-import { db } from "../../../../services/firestore";
-import emailjs from "@emailjs/browser";
-import { convertAnswer } from "../../../../utils/convertAnswers";
+// import { sendMetrik } from "../../../../utils/metriks";
+// import { setDoc, doc } from "firebase/firestore";
+// import { db } from "../../../../services/firestore";
+// import emailjs from "@emailjs/browser";
+// import { convertAnswer } from "../../../../utils/convertAnswers";
+import styles from "./index.module.scss";
 
 const Congratulation = () => {
     const { state, dispatch } = useContext(ContextApp);
 
     useEffect(() => {
-        setDoc(doc(db, "answers", state.user.email), {
-            user: { name: state.user.name, email: state.user.email },
-            answers: state.answers,
-        });
+        // setDoc(doc(db, "answers", state.user.email), {
+        //     user: { name: state.user.name, email: state.user.email },
+        //     answers: state.answers,
+        // });
 
-        sendMetrik("complete", state.user.email);
+        // sendMetrik("complete", state.user.email);
 
-        let emailTemplate = {
-            name: state.user.name,
-            email: state.user.email,
-        };
-        for (let i = 1; i < 15; i++) {
-            console.log(i - 1);
-            console.log(state.answers[i - 1]);
-            emailTemplate["answer" + i] = convertAnswer(
-                i,
-                state.answers[i - 1].answer
-            );
-        }
-        emailjs
-            .send(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                emailTemplate,
-                process.env.REACT_APP_PUBLIC_KEY
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
+        // let emailTemplate = {
+        //     name: state.user.name,
+        //     email: state.user.email,
+        // };
+        // for (let i = 1; i < 15; i++) {
+        //     console.log(i - 1);
+        //     console.log(state.answers[i - 1]);
+        //     emailTemplate["answer" + i] = convertAnswer(
+        //         i,
+        //         state.answers[i - 1].answer
+        //     );
+        // }
+        // emailjs
+        //     .send(
+        //         process.env.REACT_APP_SERVICE_ID,
+        //         process.env.REACT_APP_TEMPLATE_ID,
+        //         emailTemplate,
+        //         process.env.REACT_APP_PUBLIC_KEY
+        //     )
+        //     .then(
+        //         (result) => {
+        //             console.log(result.text);
+        //         },
+        //         (error) => {
+        //             console.log(error.text);
+        //         }
+        //     );
 
         return () => {
             dispatch({ type: "CLEAN_ANSWERS" });
@@ -91,15 +92,7 @@ const Congratulation = () => {
             >
                 {state.finalRating} %!
             </div>
-            <img
-                style={{
-                    width: "14%",
-                    margin: "0 auto",
-                    display: "block",
-                    marginTop: 50,
-                }}
-                src={bulb}
-            />
+            <img className={styles.img} src={bulb} />
             <div
                 style={{
                     fontFamily: "GilroyBold",

@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 import styles from "./index.module.scss";
 import darkLogo from "../../images/darkLogo.png";
 import telegramIcon from "../../images/telegramIcon.png";
-import facebookIcon from "../../images/facebookIcon.png";
-import instagramIcon from "../../images/instagramIcon.png";
+import facebookIconGray from "../../images/grayFacebook.png";
+import instagramIconGray from "../../images/grayInstagram.png";
 import copyright from "../../images/copyright.png";
 
 function Footer() {
@@ -72,25 +72,29 @@ function Footer() {
                             margin: "24px auto 0 auto",
                         }}
                     >
-                        <div className={styles.snBtn}>
+                        <div
+                            onClick={() =>
+                                (window.location.href =
+                                    "https://t.me/founderdad")
+                            }
+                            className={styles.snBtn}
+                            styles={{ cursor: "pointer" }}
+                        >
                             <img
-                                alt="sdf"
                                 className={styles.socialNetwork}
                                 src={telegramIcon}
                             />
                         </div>
                         <div className={styles.snBtn}>
                             <img
-                                alt="sdf"
                                 className={styles.socialNetwork}
-                                src={facebookIcon}
+                                src={facebookIconGray}
                             />
                         </div>
                         <div className={styles.snBtn}>
                             <img
-                                alt="sdf"
                                 className={styles.socialNetwork}
-                                src={instagramIcon}
+                                src={instagramIconGray}
                             />
                         </div>
                     </div>
@@ -105,7 +109,12 @@ function Footer() {
                 Получи консультацию прямо сейчас!
             </div>
             <div className={styles.socialNetworksContainer}>
-                <div className={styles.snBtn}>
+                <div
+                    onClick={() =>
+                        (window.location.href = "https://t.me/founderdad")
+                    }
+                    className={styles.snBtn}
+                >
                     <img
                         className={styles.snLogo}
                         alt="telegram"
@@ -117,7 +126,7 @@ function Footer() {
                     <img
                         className={styles.snLogo}
                         alt="facebook"
-                        src={facebookIcon}
+                        src={facebookIconGray}
                     />
                 </div>
 
@@ -125,7 +134,7 @@ function Footer() {
                     <img
                         className={styles.snLogo}
                         alt="instagram"
-                        src={instagramIcon}
+                        src={instagramIconGray}
                     />
                 </div>
             </div>

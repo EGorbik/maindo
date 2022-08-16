@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-scroll";
+import * as Scroll from "react-scroll";
 import { useNavigate } from "react-router-dom";
 import HeaderButton from "../HeaderButton/index";
 import { COLORS } from "../../constants/colors";
@@ -36,14 +36,18 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
 
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className={styles.navContainer + " me-auto"}>
-                            <Link
-                                onClick={() => navigate("/")}
-                                to="aboutUs"
-                                spy={true}
-                                smooth={true}
-                                offset={-300}
-                                delay={0}
-                                duration={100}
+                            <div
+                                onClick={() => {
+                                    navigate("/");
+                                    setTimeout(() => {
+                                        Scroll.scroller.scrollTo("aboutUs", {
+                                            duration: 100,
+                                            delay: 0,
+                                            smooth: true,
+                                            offset: -300,
+                                        });
+                                    });
+                                }}
                             >
                                 <div
                                     className={styles.navItem}
@@ -55,14 +59,19 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
                                 >
                                     О нас
                                 </div>
-                            </Link>
-                            <Link
-                                to="whyAreWe"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                delay={0}
-                                duration={100}
+                            </div>
+                            <div
+                                onClick={() => {
+                                    navigate("/");
+                                    setTimeout(() => {
+                                        Scroll.scroller.scrollTo("whyAreWe", {
+                                            duration: 100,
+                                            delay: 0,
+                                            smooth: true,
+                                            offset: -70,
+                                        });
+                                    });
+                                }}
                             >
                                 <div
                                     className={styles.navItem}
@@ -74,14 +83,19 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
                                 >
                                     Почему мы
                                 </div>
-                            </Link>
-                            <Link
-                                to="howWork"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                delay={0}
-                                duration={100}
+                            </div>
+                            <div
+                                onClick={() => {
+                                    navigate("/");
+                                    setTimeout(() => {
+                                        Scroll.scroller.scrollTo("howWork", {
+                                            duration: 100,
+                                            delay: 0,
+                                            smooth: true,
+                                            offset: -70,
+                                        });
+                                    });
+                                }}
                             >
                                 <div
                                     className={styles.navItem}
@@ -93,10 +107,10 @@ const Header = ({ setIsOpenMobileHeader, dark }) => {
                                 >
                                     Как мы работаем
                                 </div>
-                            </Link>
+                            </div>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="https://web.telegram.org/?legacy=1#/im?p=@founderdad">
+                            <Nav.Link href="https://t.me/founderdad">
                                 <HeaderButton
                                     dark={dark}
                                     img={
